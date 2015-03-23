@@ -1,0 +1,116 @@
+
+
+
+
+
+<div ng-controller="ChatController">
+
+    <div class="row">
+        <!-- Chat window -->
+        <div class="col-lg-6">
+            <div class="panel panel-default chat">
+                <div class="panel-heading">
+                    <h1 class="panel-title">
+                        Chat window <span class="loggedInAs">({{ getUsername }})</span>
+                    </h1>
+                </div>
+
+                <div class="panel-body">
+                    <div ui-view></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Users online -->
+        <div class="col-lg-6">
+            <div class="panel panel-default users">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Users</h1>
+                </div>
+
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item" ng-repeat="user in users" ng-click="assignReceiver(user)" ui-sref="userChat">{{user}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--
+<script>
+    alert("ads");
+    function autoRefresh_div()
+    {
+          $("#testing").load("chat.html");// a function which will load data from other file after x seconds
+      }
+
+      setInterval('autoRefresh_div()', 1000); // refresh div after 5 secs
+</script>
+-->
+
+<!--
+<!DOCTYPE html>
+
+<html ng-app="app">
+
+    <head>
+        <title>Chat</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+        <script src="../js/controller.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular-sanitize.min.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="../css/stylesheet.css">
+        <script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+    </head>
+
+    <body ng-controller="ChatController">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+
+                    <div class="navbar">
+                        <div class="page-header">
+                            <h1>Chat service</h1>
+                        </div>
+                    </div>
+
+                    <!-- Chat window
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title">Chat window</h1>
+    </div>
+
+    <div class="panel-body">
+        <p>Chat</p>
+        <p>{{GetUsername.userName}}</p>
+    </div>
+</div>
+
+<!-- Users online
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title">Users ( {{GetUsername.userName}} )</h1>
+    </div>
+
+    <div class="panel-body">
+        <ul>
+            <li ng-repeat="user in users">{{ user }}</li>
+        </ul>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
+
+-->

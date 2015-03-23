@@ -1,0 +1,2 @@
+1. store usernames in an array
+2. store messages inside another array within username object

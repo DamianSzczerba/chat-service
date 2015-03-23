@@ -1,0 +1,60 @@
+/* Tags */
+a {
+    color: black;
+}
+
+
+
+/* Classes */
+.online-window {
+    float: right;
+}
+
+.chat-window {
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    width: 650px;
+}
+
+.loggedInAs {
+    color: red;
+}
+
+.talkingWithUsername {
+    color: #C0C0C0;
+}
+
+.text-input {
+    width:200px;
+}
+
+.message {
+    width: 100%;
+}
+
+.users {
+    width: 200px;
+    height: 767px;
+    float: right;
+    overflow-y: scroll;
+}
+
+.chat {
+    width: 900px;
+    float: left;
+}
+
+.chatWindow {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+/* ID */
+#sendMessage {
+    float: right;
+}

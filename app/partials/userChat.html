@@ -1,0 +1,73 @@
+
+
+
+
+
+<div ng-controller="ChatController">
+
+    <!-- Inform the user who the are talking to -->
+    <h4>
+        <span class="label label-default">
+            Talking with: <span class="talkingWithUsername">{{ getReceiver }}</span>
+        </span>
+    </h4>
+
+    <!-- Message window -->
+    <div class="panel panel-default">
+        <div class="panel-body chatWindow">
+            <p ng-model="convo" ng-bind-html="conversationWindow" id="oldLogs"></p>
+        </div>
+    </div>
+
+    <!-- Message and send buttons -->
+    <div class="row">
+        <div class="form-group">
+            <div class="col-lg-6">
+                <input class="form-control message" type="text" placeholder="Type in your message here" name="message" ng-model="message">
+            </div>
+
+            <div class="col-lg-6">
+                <button class="btn btn-primary" ui-sref="userChat" ng-click="sendMessage(message)"> Send</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--
+<div ui-view></div>
+-->
+<!--
+    <body ng-controller="LoginController">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">Login</h1>
+                            </div>
+
+                            <div class="panel-body">
+
+                                    <div class="form-group">
+                                        <label for="userName">Username</label>
+                                        <input class="form-control" type="text" placeholder="Username" name="userName" ng-model="GetUsername.userName" style="width:200px;" required>
+                                    </div>
+
+                                    <button class="btn btn-primary" ng-click="authenticate(GetUsername.userName)">Login</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+-->

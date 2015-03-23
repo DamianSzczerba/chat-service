@@ -1,0 +1,59 @@
+
+
+
+
+
+<div ng-controller="LoginController">
+
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="userName">Username</label>
+                    <input class="form-control text-input" type="text" placeholder="Username" name="userName" ng-model="userName" required>
+                </div>
+
+                <button class="btn btn-primary" ui-sref="chat" ng-click="authenticate(userName)"> Login</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--
+<div ui-view></div>
+-->
+<!--
+    <body ng-controller="LoginController">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h1 class="panel-title">Login</h1>
+                            </div>
+
+                            <div class="panel-body">
+
+                                    <div class="form-group">
+                                        <label for="userName">Username</label>
+                                        <input class="form-control" type="text" placeholder="Username" name="userName" ng-model="GetUsername.userName" style="width:200px;" required>
+                                    </div>
+
+                                    <button class="btn btn-primary" ng-click="authenticate(GetUsername.userName)">Login</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+-->
